@@ -1,4 +1,9 @@
-const template = React.createElement("p", null, "This is JSX from app.js");
-const appRoot = document.getElementById("app");
+"use strict";
+
+var template = React.createElement(
+  "p",
+  null,
+  "This is JSX from app.js!"
+);
 
 ReactDOM.render(template, appRoot);
