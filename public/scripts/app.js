@@ -1,17 +1,31 @@
 "use strict";
 
+var user = {
+  name: "John Doe",
+  age: 26,
+  location: "New York"
+};
+
 var template = React.createElement(
   "div",
   null,
   React.createElement(
     "h1",
     null,
-    "Indecision App"
+    "Name: ",
+    user.name
   ),
   React.createElement(
     "p",
     null,
-    "This is some info."
+    "Age: ",
+    user.age
+  ),
+  React.createElement(
+    "p",
+    null,
+    "Location: ",
+    user.location
   )
 );
 var appRoot = document.getElementById("app");

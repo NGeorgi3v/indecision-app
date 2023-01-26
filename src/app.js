@@ -1,7 +1,14 @@
+const user = {
+  name: "John Doe",
+  age: 26,
+  location: "New York",
+};
+
 const template = (
   <div>
-    <h1>Indecision App</h1>
-    <p>This is some info.</p>
+    <h1>Name: {user.name}</h1>
+    <p>Age: {user.age}</p>
+    <p>Location: {user.location}</p>
   </div>
 );
 const appRoot = document.getElementById("app");
