@@ -1,0 +1,18 @@
+/* ------------------------------------------------------------ *\
+  Option
+\* ------------------------------------------------------------ */
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  padding: $l-size $m-size;
+  border-bottom: 0.1rem solid lighten($color-background-tertiary, 10%);
+
+  &__text {
+    margin: 0;
+    color: $color-text-secondary;
+    font-weight: 500;
+    font-size: 2rem;
+    word-break: break-all;
+  }
+}

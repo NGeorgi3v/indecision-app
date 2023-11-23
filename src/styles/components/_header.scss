@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------ *\
+  Header
+\* ------------------------------------------------------------ */
+
+.header {
+  background: $color-background-secondary;
+  margin-bottom: $m-size;
+  padding: $m-size 0;
+  color: $color-text-secondary;
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $xl-size;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $l-size;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: $color-text;
+    font-size: $m-size;
+    font-weight: 400;
+  }
+}

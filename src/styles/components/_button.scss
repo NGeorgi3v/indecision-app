@@ -1,0 +1,47 @@
+/* ------------------------------------------------------------ *\
+  Button
+\* ------------------------------------------------------------ */
+
+.button {
+  background-color: $color-accent;
+  border: solid darken($color-accent, 10%);
+  border-width: 0 0 0.3rem;
+  padding: $s-size;
+  color: $color-text-secondary;
+  font-weight: 500;
+  will-change: opacity, background-color;
+  transition: opacity $t-duration, background-color $t-duration;
+
+  &:hover:not(:disabled) {
+    background-color: darken($color-accent, 5%);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &--link {
+    background: none;
+    padding: 0;
+    border: none;
+    color: $color-text;
+  }
+
+  &--link:hover {
+    background: none;
+    text-decoration: underline;
+  }
+
+  &--large {
+    width: 100%;
+    margin-bottom: $m-size;
+    padding: 2.4rem;
+    border-bottom-width: 0.6rem;
+    font-weight: 700;
+    font-size: $l-size;
+
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: $xl-size;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ *\
+  Widget
+\* ------------------------------------------------------------ */
+
+.widget {
+  background-color: $color-background-tertiary;
+  margin-bottom: $xl-size;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    background: darken($color-background-tertiary, 5%);
+    padding: $m-size;
+    color: $color-text;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__message {
+    margin: 0;
+    padding: $l-size;
+    border-bottom: 0.1rem solid lighten($color-background-tertiary, 10%);
+    text-align: center;
+    color: $color-text;
+  }
+}

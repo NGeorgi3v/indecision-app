@@ -1,0 +1,37 @@
+/* ------------------------------------------------------------ *\
+  Add Option
+\* ------------------------------------------------------------ */
+
+.add-option {
+  padding: $m-size;
+
+  &__error {
+    margin-top: $m-size;
+    padding: 0 $m-size;
+    color: $color-text;
+    font-style: italic;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-md) {
+      flex-direction: row;
+    }
+  }
+
+  &__input {
+    margin-bottom: $s-size;
+    padding: $s-size;
+    background-color: $color-background;
+    border: solid darken($color-background, 10%);
+    border-width: 0 0 0.3rem;
+    flex: 1;
+    color: $color-text;
+
+    @media (min-width: $breakpoint-md) {
+      margin: 0 $s-size 0 0;
+    }
+  }
+}
